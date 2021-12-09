@@ -273,3 +273,436 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 5525)
 
 
+Started GET "/login" for 127.0.0.1 at 2021-12-09 13:30:34 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 5751)
+Completed 500 Internal Server Error in 50ms (Allocations: 6218)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: semantic-ui.
+        on line 1:1 of app/assets/stylesheets/custom.css.scss
+>> @import 'semantic-ui';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/login" for 127.0.0.1 at 2021-12-09 13:31:10 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 6077)
+Completed 500 Internal Server Error in 12ms (Allocations: 6482)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: semantic-ui-sass.
+        on line 1:1 of app/assets/stylesheets/custom.css.scss
+>> @import 'semantic-ui-sass';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/login" for 127.0.0.1 at 2021-12-09 13:32:32 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: eb16b69ca5af8627dd6e
+Version: webpack 4.46.0
+Time: 5057ms
+Built at: 09-12-2021 13:32:39
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ba1020e20e093d35adaa.js   1.16 MiB  application  [emitted] [immutable]  application
+js/application-ba1020e20e093d35adaa.js.map   1.33 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ba1020e20e093d35adaa.js js/application-ba1020e20e093d35adaa.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 588 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 31 hidden modules
+
+ERROR in ./node_modules/@doabit/semantic-ui-sass/src/scss/semantic-ui.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/@doabit/semantic-ui-sass/src/scss/semantic-ui.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Expected digit.
+    ╷
+354 │   left: calc(--0.05rem - 1.2em);
+    │               ^
+    ╵
+  node_modules/@doabit/semantic-ui-sass/src/scss/elements/_label.scss 354:15  @import
+  node_modules/@doabit/semantic-ui-sass/src/scss/elements/_all.scss 10:9      @import
+  node_modules/@doabit/semantic-ui-sass/src/scss/semantic-ui.scss 2:9         root stylesheet
+ @ ./node_modules/@doabit/semantic-ui-sass/src/scss/semantic-ui.scss 2:26-198
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 7263.5ms | Allocations: 13782)
+Completed 200 OK in 7265ms (Views: 7264.2ms | Allocations: 14222)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 13:32:42 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3586)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 4026)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 13:36:12 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 40)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: ed9d230985f08b0c9066
+Version: webpack 4.46.0
+Time: 1272ms
+Built at: 09-12-2021 13:36:18
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-becd3043c926f78e8475.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-becd3043c926f78e8475.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-becd3043c926f78e8475.js js/application-becd3043c926f78e8475.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 527 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5508.2ms | Allocations: 82770)
+Completed 200 OK in 5509ms (Views: 5508.7ms | Allocations: 83211)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:36:27 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 6230)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 7433)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:38:14 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 5925)
+Completed 200 OK in 33ms (Views: 28.6ms | Allocations: 6411)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:38:16 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5925)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 6365)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:39:44 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5925)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 6365)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:41:47 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 7865)
+Completed 500 Internal Server Error in 45ms (Allocations: 9167)
+
+
+  
+ActionView::Template::Error (Missing partial chatroom/_navigation, application/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/app/views"
+  * "/Users/maurice/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/maurice/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= render 'navigation' %>
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:43:25 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6461)
+Completed 200 OK in 15ms (Views: 13.6ms | Allocations: 7832)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:50:17 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6463)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 7829)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:50:52 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6466)
+Completed 200 OK in 16ms (Views: 14.4ms | Allocations: 7838)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:51:34 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6462)
+Completed 200 OK in 15ms (Views: 14.1ms | Allocations: 7828)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:51:53 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 143)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 6463)
+Completed 200 OK in 40ms (Views: 38.9ms | Allocations: 7830)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:52:19 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6464)
+Completed 200 OK in 13ms (Views: 11.7ms | Allocations: 7835)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:56:19 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 40)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: bfc0f575717005807bb4
+Version: webpack 4.46.0
+Time: 1291ms
+Built at: 09-12-2021 13:56:22
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-eb17d7876172f31d4052.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-eb17d7876172f31d4052.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-eb17d7876172f31d4052.js js/application-eb17d7876172f31d4052.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 557 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3544.3ms | Allocations: 7150)
+Completed 200 OK in 3551ms (Views: 3546.3ms | Allocations: 7637)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:57:23 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: accdd9d7ca8921fe1e81
+Version: webpack 4.46.0
+Time: 1256ms
+Built at: 09-12-2021 13:57:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bd3fd465a7cb37c7f2cf.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-bd3fd465a7cb37c7f2cf.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bd3fd465a7cb37c7f2cf.js js/application-bd3fd465a7cb37c7f2cf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 611 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2680.4ms | Allocations: 7125)
+Completed 200 OK in 2683ms (Views: 2681.2ms | Allocations: 7566)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:57:35 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5925)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 6365)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:58:39 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: 3e60b97dc605be000a11
+Version: webpack 4.46.0
+Time: 1364ms
+Built at: 09-12-2021 13:58:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e29c3800de8c0ec27e3e.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-e29c3800de8c0ec27e3e.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e29c3800de8c0ec27e3e.js js/application-e29c3800de8c0ec27e3e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 597 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3538.9ms | Allocations: 7127)
+Completed 200 OK in 3540ms (Views: 3539.6ms | Allocations: 7567)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 13:59:03 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5925)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 6366)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:00:12 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: f41489cce671d4e40638
+Version: webpack 4.46.0
+Time: 1333ms
+Built at: 09-12-2021 14:00:16
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a092ca6d22cd0ec3ff5d.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-a092ca6d22cd0ec3ff5d.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a092ca6d22cd0ec3ff5d.js js/application-a092ca6d22cd0ec3ff5d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 618 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3519.5ms | Allocations: 7128)
+Completed 200 OK in 3521ms (Views: 3520.0ms | Allocations: 7568)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:01:26 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 6469)
+Completed 200 OK in 23ms (Views: 21.6ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:02:24 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 7861)
+Completed 500 Internal Server Error in 16ms (Allocations: 9188)
+
+
+  
+ActionView::Template::Error (Missing partial chatroom/_navigation, application/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/app/views"
+  * "/Users/maurice/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/maurice/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= render 'navigation' %>
+    15:     <div class="ui container">
+    16:       <%= yield %>
+    17:     </div>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:02:57 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6789)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 8159)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:26:26 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 213.1ms | Allocations: 19381)
+Completed 200 OK in 240ms (Views: 228.9ms | Allocations: 20751)
+
+
