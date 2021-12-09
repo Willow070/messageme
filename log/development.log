@@ -1792,3 +1792,2924 @@ Migrating to CreateUsers (20211209142925)
   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Bram"], ["password_digest", "$2a$12$GMr6TaPxgvBeMuJJv4R9geNV4YEtUECEgZLg3cWnJvhnxK.cpLdJi"], ["created_at", "2021-12-09 14:35:07.724161"], ["updated_at", "2021-12-09 14:35:07.724161"]]
   [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Tom"], ["password_digest", "$2a$12$7ZS4gwMlXPCLjMFEJOTjUOmPaaIIt9UuvqowbGrLFHHQZ0MF12HEW"], ["created_at", "2021-12-09 16:50:09.565188"], ["updated_at", "2021-12-09 16:50:09.565188"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Anja"], ["password_digest", "$2a$12$YdZGy4zw547b9gFgUDrEfu09IH20l6MS6z9z4lWBy1eKjEULvQt6q"], ["created_at", "2021-12-09 16:50:09.797500"], ["updated_at", "2021-12-09 16:50:09.797500"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2021-12-09 17:51:34 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 410)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 322)
+  Rendered layout layouts/application.html.erb (Duration: 292.2ms | Allocations: 46478)
+Completed 200 OK in 310ms (Views: 297.2ms | ActiveRecord: 0.0ms | Allocations: 50222)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20211209165420)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "body" varchar, "user_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211209165420"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "TEST"], ["user_id", 1], ["created_at", "2021-12-09 17:06:22.542696"], ["updated_at", "2021-12-09 17:06:22.542696"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Tom"], ["user_id", 5], ["created_at", "2021-12-09 17:06:32.599661"], ["updated_at", "2021-12-09 17:06:32.599661"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Anja"], ["user_id", 5], ["created_at", "2021-12-09 17:06:32.606439"], ["updated_at", "2021-12-09 17:06:32.606439"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Walter"], ["user_id", 5], ["created_at", "2021-12-09 17:06:32.613207"], ["updated_at", "2021-12-09 17:06:32.613207"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Maurice"], ["user_id", 5], ["created_at", "2021-12-09 17:06:32.617999"], ["updated_at", "2021-12-09 17:06:32.617999"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Bram"], ["user_id", 5], ["created_at", "2021-12-09 17:06:32.621961"], ["updated_at", "2021-12-09 17:06:32.621961"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Destroy (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Destroy (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Destroy (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Destroy (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Destroy (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Destroy (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Tom"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Anja"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Tom"], ["user_id", 4], ["created_at", "2021-12-09 17:07:32.969627"], ["updated_at", "2021-12-09 17:07:32.969627"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Anja"], ["user_id", 5], ["created_at", "2021-12-09 17:07:32.978270"], ["updated_at", "2021-12-09 17:07:32.978270"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Walter"], ["user_id", 2], ["created_at", "2021-12-09 17:07:32.984456"], ["updated_at", "2021-12-09 17:07:32.984456"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Maurice"], ["user_id", 1], ["created_at", "2021-12-09 17:07:32.989945"], ["updated_at", "2021-12-09 17:07:32.989945"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Hi my name is Bram"], ["user_id", 3], ["created_at", "2021-12-09 17:07:32.994487"], ["updated_at", "2021-12-09 17:07:32.994487"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:09:55 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 11267)
+Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 13690)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:13:30 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 11903)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 13377)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:14:04 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/_message.html.erb (Duration: 1.8ms | Allocations: 1970)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2437)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3867)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: 
+    4: 
+    5: <div class="container">
+    6:   <% @articles.each do |article| %>
+    7:     <div class="row justify-content-md-center mt-4">
+    8:       <div class="col-8">
+    9:         <div class="card text-center shadow rounded mb-5">
+  
+app/views/chatroom/_message.html.erb:6
+app/views/chatroom/index.html.erb:11
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:14:59 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_message.html.erb:2
+  Rendered chatroom/_message.html.erb (Duration: 8.9ms | Allocations: 3932)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 15991)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.8ms | Allocations: 17483)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:15:36 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/_message.html.erb (Duration: 2.3ms | Allocations: 1304)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1688)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1763)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3178)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+  <% @messages.each do |message| %><div class="event">
+    <div class="content">
+      <div class="summary">
+         <em><%= message.user.username </em> wrote: <%= message.body %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+):
+1:    
+2:      <% @messages.each do |message| %><div class="event">
+3:        <div class="content">
+4:          <div class="summary">
+5:             <em><%= message.user.username </em> wrote: <%= message.body %>
+6:          </div>
+7:        </div>
+8:      </div>
+9:    <% end %>
+  
+app/views/chatroom/_message.html.erb:6: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:6: unmatched close parenthesis: /em> wrote: <%= message.body );@output_buffer.safe_append='
+app/views/chatroom/_message.html.erb:7: syntax error, unexpected '<'
+app/views/chatroom/_message.html.erb:8: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:11: unterminated string meets end of file
+app/views/chatroom/_message.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/_message.html.erb:6: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:6: unmatched close parenthesis: /em> wrote: <%= message.body );@output_buffer.safe_append='
+app/views/chatroom/_message.html.erb:7: syntax error, unexpected '<'
+app/views/chatroom/_message.html.erb:8: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:11: unterminated string meets end of file
+app/views/chatroom/_message.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/_message.html.erb:6: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:6: unmatched close parenthesis: /em> wrote: <%= message.body );@output_buffer.safe_append='
+app/views/chatroom/_message.html.erb:7: syntax error, unexpected '<'
+app/views/chatroom/_message.html.erb:8: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:11: unterminated string meets end of file
+app/views/chatroom/_message.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/_message.html.erb:6: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:6: unmatched close parenthesis: /em> wrote: <%= message.body );@output_buffer.safe_append='
+app/views/chatroom/_message.html.erb:7: syntax error, unexpected '<'
+app/views/chatroom/_message.html.erb:8: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:11: unterminated string meets end of file
+app/views/chatroom/_message.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/_message.html.erb:6: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:6: unmatched close parenthesis: /em> wrote: <%= message.body );@output_buffer.safe_append='
+app/views/chatroom/_message.html.erb:7: syntax error, unexpected '<'
+app/views/chatroom/_message.html.erb:8: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:11: unterminated string meets end of file
+app/views/chatroom/_message.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/_message.html.erb:6: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:6: unmatched close parenthesis: /em> wrote: <%= message.body );@output_buffer.safe_append='
+app/views/chatroom/_message.html.erb:7: syntax error, unexpected '<'
+app/views/chatroom/_message.html.erb:8: unknown regexp options - dv
+app/views/chatroom/_message.html.erb:11: unterminated string meets end of file
+app/views/chatroom/_message.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:11
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:15:56 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_message.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  Rendered chatroom/_message.html.erb (Duration: 37.5ms | Allocations: 14496)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 39.2ms | Allocations: 14881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 255)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 26511)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 1.1ms | Allocations: 28013)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:16:44 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_message.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  Rendered chatroom/_message.html.erb (Duration: 11.9ms | Allocations: 4787)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 4881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 15825)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.7ms | Allocations: 16316)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:18:54 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_message.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_message.html.erb:5
+  Rendered chatroom/_message.html.erb (Duration: 16.4ms | Allocations: 5086)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 5468)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.3ms | Allocations: 261)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 17147)
+Completed 200 OK in 66ms (Views: 61.5ms | ActiveRecord: 1.5ms | Allocations: 18575)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:20:27 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.5ms | Allocations: 4291)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5604)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 17285)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.6ms | Allocations: 18731)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:25:58 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 21.0ms | Allocations: 1300)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 12949)
+Completed 200 OK in 75ms (Views: 71.4ms | Allocations: 14502)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:29:46 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:30:40 +0100
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for SessionsController
+Did you mean?  new):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:31:14 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"maurice@nettl-rijswijk.nl", "password"=>"[FILTERED]"}, "button"=>""}
+Completed 500 Internal Server Error in 7ms (Allocations: 2448)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:31:25 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 441)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 11588)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 12327)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:31:27 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"maurice@nettl-rijswijk.nl", "password"=>"[FILTERED]"}, "button"=>""}
+Completed 500 Internal Server Error in 1ms (Allocations: 1087)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:31:41 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 11240)
+Completed 200 OK in 18ms (Views: 17.5ms | Allocations: 11696)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:32:20 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 441)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 11562)
+Completed 200 OK in 64ms (Views: 63.6ms | Allocations: 12341)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:32:25 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.2ms | Allocations: 4421)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.email):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:32:41 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 1.0ms | Allocations: 8155)
+
+
+  
+NoMethodError (undefined method `user_url' for #<SessionsController:0x00000000017d18>):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:32:52 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 236ms (ActiveRecord: 0.9ms | Allocations: 6013)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:32:52 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.8ms | Allocations: 5286)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 8940)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 20056)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 1.1ms | Allocations: 21978)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:33:03 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 439)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 11585)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 12299)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:33:07 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 220ms (ActiveRecord: 0.1ms | Allocations: 1001)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:33:08 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.3ms | Allocations: 4152)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 15973)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.5ms | Allocations: 16458)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:33:32 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 11258)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 11651)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:35:17 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1329)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2734)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h4 class="ui center aligned medium icon header">
+  <i class="circular coffee orange icon"></i>
+  <%= "Hi! #{user.username}" if logged_in? => Say something
+</h4>
+
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui feed">
+          <%= render @messages %>
+        </div>
+      </div>
+      <div class="extra content">
+        <form class="ui reply form">
+          <div class="field">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Enter a message...">
+              <i class="bordered inverted orange edit icon"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+):
+1:    <h4 class="ui center aligned medium icon header">
+2:      <i class="circular coffee orange icon"></i>
+3:      <%= "Hi! #{user.username}" if logged_in? => Say something
+4:    </h4>
+5:    
+6:    <div class="ui two column grid">
+7:      <div class="twelve wide column">
+8:        <div class="ui fluid raised card chatbox">
+9:          <div class="content">
+10:            <div class="ui feed">
+11:              <%= render @messages %>
+12:            </div>
+13:          </div>
+14:          <div class="extra content">
+15:            <form class="ui reply form">
+16:              <div class="field">
+17:                <div class="ui fluid icon input">
+18:                  <input type="text" placeholder="Enter a message...">
+19:                  <i class="bordered inverted orange edit icon"></i>
+20:                </div>
+21:              </div>
+22:            </form>
+23:          </div>
+24:        </div>
+25:      </div>
+26:      <div class="four wide column">
+27:        <div class="ui fluid raised card chatbox">
+28:          <div class="content">
+29:            <div class="ui inverted vertical menu">
+30:              <a class="active item">
+31:                Home
+32:              </a>
+33:              <a class="item">
+34:                Messages
+35:              </a>
+36:              <a class="item">
+37:                Friends
+38:              </a>
+39:            </div>
+40:          </div>
+41:      </div>
+42:    </div>
+  
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:35:21 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1200)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1269)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1765)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h4 class="ui center aligned medium icon header">
+  <i class="circular coffee orange icon"></i>
+  <%= "Hi! #{user.username}" if logged_in? => Say something
+</h4>
+
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui feed">
+          <%= render @messages %>
+        </div>
+      </div>
+      <div class="extra content">
+        <form class="ui reply form">
+          <div class="field">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Enter a message...">
+              <i class="bordered inverted orange edit icon"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+):
+1:    <h4 class="ui center aligned medium icon header">
+2:      <i class="circular coffee orange icon"></i>
+3:      <%= "Hi! #{user.username}" if logged_in? => Say something
+4:    </h4>
+5:    
+6:    <div class="ui two column grid">
+7:      <div class="twelve wide column">
+8:        <div class="ui fluid raised card chatbox">
+9:          <div class="content">
+10:            <div class="ui feed">
+11:              <%= render @messages %>
+12:            </div>
+13:          </div>
+14:          <div class="extra content">
+15:            <form class="ui reply form">
+16:              <div class="field">
+17:                <div class="ui fluid icon input">
+18:                  <input type="text" placeholder="Enter a message...">
+19:                  <i class="bordered inverted orange edit icon"></i>
+20:                </div>
+21:              </div>
+22:            </form>
+23:          </div>
+24:        </div>
+25:      </div>
+26:      <div class="four wide column">
+27:        <div class="ui fluid raised card chatbox">
+28:          <div class="content">
+29:            <div class="ui inverted vertical menu">
+30:              <a class="active item">
+31:                Home
+32:              </a>
+33:              <a class="item">
+34:                Messages
+35:              </a>
+36:              <a class="item">
+37:                Friends
+38:              </a>
+39:            </div>
+40:          </div>
+41:      </div>
+42:    </div>
+  
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:35:39 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1200)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1269)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1700)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h4 class="ui center aligned medium icon header">
+  <i class="circular coffee orange icon"></i>
+  <%= "Hi! #{user.username}" if logged_in? => Say something
+</h4>
+
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui feed">
+          <%= render @messages %>
+        </div>
+      </div>
+      <div class="extra content">
+        <form class="ui reply form">
+          <div class="field">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Enter a message...">
+              <i class="bordered inverted orange edit icon"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+):
+1:    <h4 class="ui center aligned medium icon header">
+2:      <i class="circular coffee orange icon"></i>
+3:      <%= "Hi! #{user.username}" if logged_in? => Say something
+4:    </h4>
+5:    
+6:    <div class="ui two column grid">
+7:      <div class="twelve wide column">
+8:        <div class="ui fluid raised card chatbox">
+9:          <div class="content">
+10:            <div class="ui feed">
+11:              <%= render @messages %>
+12:            </div>
+13:          </div>
+14:          <div class="extra content">
+15:            <form class="ui reply form">
+16:              <div class="field">
+17:                <div class="ui fluid icon input">
+18:                  <input type="text" placeholder="Enter a message...">
+19:                  <i class="bordered inverted orange edit icon"></i>
+20:                </div>
+21:              </div>
+22:            </form>
+23:          </div>
+24:        </div>
+25:      </div>
+26:      <div class="four wide column">
+27:        <div class="ui fluid raised card chatbox">
+28:          <div class="content">
+29:            <div class="ui inverted vertical menu">
+30:              <a class="active item">
+31:                Home
+32:              </a>
+33:              <a class="item">
+34:                Messages
+35:              </a>
+36:              <a class="item">
+37:                Friends
+38:              </a>
+39:            </div>
+40:          </div>
+41:      </div>
+42:    </div>
+  
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+app/views/chatroom/index.html.erb:3: void value expression
+app/views/chatroom/index.html.erb:3: syntax error, unexpected local variable or method, expecting ')'
+app/views/chatroom/index.html.erb:12: unknown regexp options - dv
+app/views/chatroom/index.html.erb:12: unmatched close parenthesis: /h4>
+app/views/chatroom/index.html.erb:13: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:20: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:21: unknown regexp options - dv
+app/views/chatroom/index.html.erb:22: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:23: unknown regexp options - dv
+app/views/chatroom/index.html.erb:24: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:25: unknown regexp options - dv
+app/views/chatroom/index.html.erb:26: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:27: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:28: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:29: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:30: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:32: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:35: unknown regexp option - a
+app/views/chatroom/index.html.erb:36: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:38: syntax error, unexpected '<', expecting ')'
+app/views/chatroom/index.html.erb:39: unknown regexp options - dv
+app/views/chatroom/index.html.erb:40: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:41: unknown regexp options - dv
+app/views/chatroom/index.html.erb:42: syntax error, unexpected '<'
+app/views/chatroom/index.html.erb:45: unterminated regexp meets end of file
+app/views/chatroom/index.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:35:57 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 32.0ms | Allocations: 11381)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 40.0ms | Allocations: 15785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 317)
+  Rendered layout layouts/application.html.erb (Duration: 181.6ms | Allocations: 46170)
+Completed 200 OK in 251ms (Views: 183.6ms | ActiveRecord: 2.0ms | Allocations: 51666)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:37:40 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4192)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4267)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5813)
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<ActionView::Base:0x00000000009ba0>
+Did you mean?  logger?):
+    1: <h4 class="ui center aligned medium icon header">
+    2:   <i class="circular coffee orange icon"></i>
+    3:   <% if logged_in? %>
+    4:     Hi <%= current_user.username %> Say something
+    5:   <% end %>
+    6: </h4>
+  
+app/views/chatroom/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:39:40 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:13
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 19.2ms | Allocations: 5190)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 44.3ms | Allocations: 14022)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 72.4ms | Allocations: 25680)
+Completed 200 OK in 79ms (Views: 73.4ms | ActiveRecord: 2.6ms | Allocations: 27289)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:40:00 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.1ms | Allocations: 4220)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 6188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 258)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 17944)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.6ms | Allocations: 19399)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:40:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:40:52 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 455)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:40:52 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 20.3ms | Allocations: 8755)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 13194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 24396)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 2.9ms | Allocations: 26001)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:40:59 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 12359)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 13575)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:41:06 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 0.2ms | Allocations: 1290)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:41:06 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 7.7ms | Allocations: 4093)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5678)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 16707)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.6ms | Allocations: 17194)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:43:31 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 11334)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 11790)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:43:34 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms (ActiveRecord: 0.3ms | Allocations: 905)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:43:35 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 11.0ms | Allocations: 4076)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 5552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 16580)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.8ms | Allocations: 17047)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:43:39 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 292)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:43:39 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 13.2ms | Allocations: 4117)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 4966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 15994)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.0ms | Allocations: 16460)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:44:27 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.5ms | Allocations: 4282)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 17379)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.6ms | Allocations: 18816)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:44:29 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 11943)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 13145)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:44:32 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms (ActiveRecord: 0.2ms | Allocations: 1069)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:44:32 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 10.7ms | Allocations: 4112)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 5632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 16671)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 1.1ms | Allocations: 17157)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:44:33 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:44:33 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 10.5ms | Allocations: 4117)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 4966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 16002)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.7ms | Allocations: 16479)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:44:36 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 11329)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 11788)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:45:07 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 222ms (ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:45:07 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 10.6ms | Allocations: 4220)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 6230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 284)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 17756)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.7ms | Allocations: 19193)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:45:10 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:45:10 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 12.6ms | Allocations: 4117)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 4970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 16009)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.8ms | Allocations: 16501)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:46:38 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 11690)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 12873)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:46:42 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 223ms (ActiveRecord: 0.1ms | Allocations: 1049)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:46:42 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.8ms | Allocations: 4110)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5629)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 16404)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.6ms | Allocations: 16888)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:46:58 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 300)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:46:58 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.9ms | Allocations: 4119)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 4979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 16015)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.7ms | Allocations: 16497)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:46:59 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 11070)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 11529)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:47:04 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"alksjdkasjhd", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "alksjdkasjhd"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 11061)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.1ms | Allocations: 12098)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:47:22 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 11332)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 11781)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:47:28 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 0.1ms | Allocations: 896)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:47:28 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.5ms | Allocations: 4074)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 5554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 16354)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.7ms | Allocations: 16822)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:51:05 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 300)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:51:05 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 12.3ms | Allocations: 4284)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 5630)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 284)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 17823)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.8ms | Allocations: 19270)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:51:11 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 11806)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 13027)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:51:14 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 222ms (ActiveRecord: 0.2ms | Allocations: 1035)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:51:14 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.7ms | Allocations: 4110)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 111)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 16523)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.7ms | Allocations: 17009)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:51:35 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 8.5ms | Allocations: 5044)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 27.3ms | Allocations: 13708)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 25035)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 2.2ms | Allocations: 26639)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/logout" for 127.0.0.1 at 2021-12-09 18:51:39 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:51:39 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 10.0ms | Allocations: 4172)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 16157)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 1.0ms | Allocations: 16680)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 18:51:41 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 439)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 11538)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 12230)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-09 18:51:43 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Maurice", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms (ActiveRecord: 0.2ms | Allocations: 1240)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:51:44 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 7.3ms | Allocations: 4096)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 5589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 16479)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.6ms | Allocations: 16962)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:52:47 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.3ms | Allocations: 4220)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 6223)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: cca7ae02fb8e5f5df946
+Version: webpack 4.46.0
+Time: 795ms
+Built at: 09-12-2021 18:52:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e244fcb0ae989d677279.js   8.52 KiB  application  [emitted] [immutable]  application
+js/application-e244fcb0ae989d677279.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e244fcb0ae989d677279.js js/application-e244fcb0ae989d677279.js.map
+[./app/javascript/packs/application.js] 4.63 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/app/javascript/packs/application.js: Unexpected token, expected "," (16:68)
+
+  14 | ActiveStorage.start()
+  15 |
+> 16 | $(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown(); $('.message .close')
+     |                                                                     ^
+  17 |   .on('click', function() {
+  18 |     $(this)
+  19 |       .closest('.message')
+    at Parser._raise (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:3580:16)
+    at Parser.expect (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:3554:28)
+    at Parser.parseCallExpressionArguments (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11775:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11698:29)
+    at Parser.parseSubscript (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11628:19)
+    at Parser.parseSubscripts (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11601:19)
+    at Parser.parseExprSubscripts (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11590:17)
+    at Parser.parseUpdate (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Parser.parseMaybeUnary (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Parser.parseMaybeUnaryOrPrivate (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Parser.parseExprOps (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11360:23)
+    at Parser.parseMaybeConditional (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Parser.parseMaybeAssign (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11290:21)
+    at Parser.parseExpressionBase (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11226:23)
+    at /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11220:39
+    at Parser.allowInAnd (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13131:16)
+    at Parser.parseExpression (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11220:17)
+    at Parser.parseStatementContent (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13485:23)
+    at Parser.parseStatement (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13352:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13941:25)
+    at Parser.parseBlockBody (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13932:10)
+    at Parser.parseProgram (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13272:10)
+    at Parser.parseTopLevel (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13263:25)
+    at Parser.parse (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:15037:10)
+    at parse (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:15089:38)
+    at parser (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/core/lib/parser/index.js:52:34)
+    at parser.next (<anonymous>)
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 284)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 3107.4ms | Allocations: 19648)
+Completed 200 OK in 3111ms (Views: 3108.8ms | ActiveRecord: 0.7ms | Allocations: 21077)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:53:05 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.7ms | Allocations: 4074)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 5555)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: f41489cce671d4e40638
+Version: webpack 4.46.0
+Time: 1222ms
+Built at: 09-12-2021 18:53:08
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a092ca6d22cd0ec3ff5d.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-a092ca6d22cd0ec3ff5d.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a092ca6d22cd0ec3ff5d.js js/application-a092ca6d22cd0ec3ff5d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 618 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 108)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 2946.8ms | Allocations: 17906)
+Completed 200 OK in 2948ms (Views: 2946.8ms | ActiveRecord: 0.8ms | Allocations: 18384)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:53:41 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.6ms | Allocations: 4074)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5555)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1daf9daba626bc5f166b
+Version: webpack 4.46.0
+Time: 730ms
+Built at: 09-12-2021 18:53:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-47a8803a68f65740e9f2.js    8.6 KiB  application  [emitted] [immutable]  application
+js/application-47a8803a68f65740e9f2.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-47a8803a68f65740e9f2.js js/application-47a8803a68f65740e9f2.js.map
+[./app/javascript/packs/application.js] 4.71 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/app/javascript/packs/application.js: Unexpected token, expected "," (17:134)
+
+  15 |
+  16 | $(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
+> 17 | $(document).on("turbolinks:load", () =>$('.message .close').on('click', function() { $(this).closest('.message').transition('fade');}););
+     |                                                                                                                                       ^
+  18 |
+    at Parser._raise (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:3580:16)
+    at Parser.expect (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:3554:28)
+    at Parser.parseCallExpressionArguments (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11775:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11698:29)
+    at Parser.parseSubscript (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11628:19)
+    at Parser.parseSubscripts (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11601:19)
+    at Parser.parseExprSubscripts (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11590:17)
+    at Parser.parseUpdate (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11564:21)
+    at Parser.parseMaybeUnary (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11539:23)
+    at Parser.parseMaybeUnaryOrPrivate (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11353:61)
+    at Parser.parseExprOps (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11360:23)
+    at Parser.parseMaybeConditional (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11330:23)
+    at Parser.parseMaybeAssign (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11290:21)
+    at Parser.parseExpressionBase (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11226:23)
+    at /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11220:39
+    at Parser.allowInAnd (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13131:16)
+    at Parser.parseExpression (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:11220:17)
+    at Parser.parseStatementContent (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13485:23)
+    at Parser.parseStatement (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13352:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13941:25)
+    at Parser.parseBlockBody (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13932:10)
+    at Parser.parseProgram (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13272:10)
+    at Parser.parseTopLevel (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:13263:25)
+    at Parser.parse (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:15037:10)
+    at parse (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/parser/lib/index.js:15089:38)
+    at parser (/Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/node_modules/@babel/core/lib/parser/index.js:52:34)
+    at parser.next (<anonymous>)
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 109)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 2903.3ms | Allocations: 17841)
+Completed 200 OK in 2905ms (Views: 2903.2ms | ActiveRecord: 0.7ms | Allocations: 18301)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:53:47 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 10.2ms | Allocations: 4074)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5555)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 16703)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.8ms | Allocations: 17163)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 18:54:09 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:5
+  Rendered collection of messages/_message.html.erb [5 times] (Duration: 9.1ms | Allocations: 4074)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 5556)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/maurice/Documents/Ruby/Rails/rails_6_projects/messageme/public/packs
+[Webpacker] Hash: f41489cce671d4e40638
+Version: webpack 4.46.0
+Time: 1198ms
+Built at: 09-12-2021 18:54:12
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a092ca6d22cd0ec3ff5d.js   1.15 MiB  application  [emitted] [immutable]  application
+js/application-a092ca6d22cd0ec3ff5d.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a092ca6d22cd0ec3ff5d.js js/application-a092ca6d22cd0ec3ff5d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 618 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 108)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 3415.6ms | Allocations: 17906)
+Completed 200 OK in 3417ms (Views: 3415.5ms | ActiveRecord: 0.6ms | Allocations: 18365)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
