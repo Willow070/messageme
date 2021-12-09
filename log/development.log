@@ -706,3 +706,1089 @@ Processing by ChatroomController#index as HTML
 Completed 200 OK in 240ms (Views: 228.9ms | Allocations: 20751)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:31:24 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 7258)
+Completed 200 OK in 43ms (Views: 40.8ms | Allocations: 8623)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:31:32 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 7259)
+Completed 200 OK in 27ms (Views: 26.1ms | Allocations: 8625)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:31:47 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7260)
+Completed 200 OK in 20ms (Views: 19.5ms | Allocations: 8630)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:32:05 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 6479)
+Completed 200 OK in 15ms (Views: 14.9ms | Allocations: 6967)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:39:42 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 6531)
+Completed 200 OK in 45ms (Views: 41.0ms | Allocations: 7012)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:39:55 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 367)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 2563.1ms | Allocations: 97278)
+Completed 200 OK in 2635ms (Views: 2618.3ms | ActiveRecord: 0.0ms | Allocations: 101140)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:41:27 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 5024.8ms | Allocations: 192776)
+Completed 200 OK in 5026ms (Views: 5025.6ms | ActiveRecord: 0.0ms | Allocations: 193333)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:41:44 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 11436)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 11888)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:42:18 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 11709)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 13135)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:42:20 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 10748)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 11243)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:42:24 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 11536)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 12969)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:42:47 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 11709)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 13149)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:50:45 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 11753)
+Completed 200 OK in 32ms (Views: 30.7ms | Allocations: 13186)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:52:57 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 195)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 11758)
+Completed 200 OK in 27ms (Views: 25.8ms | Allocations: 13191)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:55:22 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 11765)
+Completed 200 OK in 30ms (Views: 29.1ms | Allocations: 13200)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:55:43 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 11762)
+Completed 200 OK in 26ms (Views: 25.0ms | Allocations: 13195)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:56:17 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 11762)
+Completed 200 OK in 27ms (Views: 26.1ms | Allocations: 13195)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:56:28 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 11765)
+Completed 200 OK in 22ms (Views: 21.2ms | Allocations: 13198)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:56:40 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 11765)
+Completed 200 OK in 21ms (Views: 20.3ms | Allocations: 13198)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:58:18 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 11764)
+Completed 200 OK in 27ms (Views: 26.5ms | Allocations: 13197)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 14:58:43 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 2604.9ms | Allocations: 102649)
+Completed 200 OK in 2606ms (Views: 2605.7ms | Allocations: 103109)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:03:43 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 11767)
+Completed 200 OK in 68ms (Views: 58.2ms | Allocations: 13184)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:06:01 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 11775)
+Completed 200 OK in 28ms (Views: 27.4ms | Allocations: 13207)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:06:18 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 11775)
+Completed 200 OK in 22ms (Views: 21.3ms | Allocations: 13207)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:07:04 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11774)
+Completed 200 OK in 21ms (Views: 20.3ms | Allocations: 13210)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:07:25 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 11773)
+Completed 200 OK in 26ms (Views: 25.5ms | Allocations: 13206)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:07:31 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 11774)
+Completed 200 OK in 23ms (Views: 22.5ms | Allocations: 13207)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:08:55 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 11775)
+Completed 200 OK in 29ms (Views: 27.5ms | Allocations: 13207)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:09:50 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 11774)
+Completed 200 OK in 29ms (Views: 27.4ms | Allocations: 13206)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:10:35 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 11753)
+Completed 200 OK in 28ms (Views: 26.9ms | Allocations: 13185)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:10:49 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 11760)
+Completed 200 OK in 24ms (Views: 23.1ms | Allocations: 13193)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:15:05 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 5.6ms | Allocations: 1123)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 12720)
+Completed 500 Internal Server Error in 53ms (Allocations: 14255)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="ui small menu inverted">
+  <div class="ui container">
+    <a class="active item">
+      Chatroom
+    </a>
+    <a class="item">
+      Messages
+    </a>
+    <div class="right menu">
+      <div class="ui dropdown item">
+        Account <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item">Log out</a>
+          <a class="item">Log in</a>
+          <%= link_to "Log in", , class: "item" %>
+          <a class="item">Sign up</a>
+        </div>
+      </div>
+      <div class="item">
+          <div class="ui primary button">Sign Up</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+):
+1:    <div class="ui small menu inverted">
+2:      <div class="ui container">
+3:        <a class="active item">
+4:          Chatroom
+5:        </a>
+6:        <a class="item">
+7:          Messages
+8:        </a>
+9:        <div class="right menu">
+10:          <div class="ui dropdown item">
+11:            Account <i class="dropdown icon"></i>
+12:            <div class="menu">
+13:              <a class="item">Log out</a>
+14:              <a class="item">Log in</a>
+15:              <%= link_to "Log in", , class: "item" %>
+16:              <a class="item">Sign up</a>
+17:            </div>
+18:          </div>
+19:          <div class="item">
+20:              <div class="ui primary button">Sign Up</div>
+21:          </div>
+22:        </div>
+23:      </div>
+24:    </div>
+  
+app/views/layouts/_navigation.html.erb:15: syntax error, unexpected ','
+app/views/layouts/_navigation.html.erb:15: syntax error, unexpected ','
+app/views/layouts/_navigation.html.erb:15: syntax error, unexpected ','
+app/views/layouts/_navigation.html.erb:15: syntax error, unexpected ','
+app/views/layouts/_navigation.html.erb:15: syntax error, unexpected ','
+app/views/layouts/_navigation.html.erb:15: syntax error, unexpected ','
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:15:17 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 255)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11706)
+Completed 200 OK in 21ms (Views: 20.4ms | Allocations: 13173)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/sessions" for 127.0.0.1 at 2021-12-09 15:15:24 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController
+Did you mean?  new):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sessions" for 127.0.0.1 at 2021-12-09 15:15:37 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController
+Did you mean?  new):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sessions" for 127.0.0.1 at 2021-12-09 15:15:38 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController
+Did you mean?  new):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:15:45 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 12.9ms | Allocations: 4361)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 15764)
+Completed 500 Internal Server Error in 43ms (Allocations: 17227)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_login_path' for #<ActionView::Base:0x0000000001a6a8>
+Did you mean?  sessions_path):
+    12:         <div class="menu">
+    13:           <a class="item">Log out</a>
+    14:           <a class="item">Log in</a>
+    15:           <%= link_to "Log in", sessions_login_path, class: "item" %>
+    16:           <a class="item">Sign up</a>
+    17:         </div>
+    18:       </div>
+  
+app/views/layouts/_navigation.html.erb:15
+app/views/layouts/application.html.erb:15
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:15:46 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 12.2ms | Allocations: 4169)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 14881)
+Completed 500 Internal Server Error in 29ms (Allocations: 15340)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_login_path' for #<ActionView::Base:0x0000000001a9a0>
+Did you mean?  sessions_path):
+    12:         <div class="menu">
+    13:           <a class="item">Log out</a>
+    14:           <a class="item">Log in</a>
+    15:           <%= link_to "Log in", sessions_login_path, class: "item" %>
+    16:           <a class="item">Sign up</a>
+    17:         </div>
+    18:       </div>
+  
+app/views/layouts/_navigation.html.erb:15
+app/views/layouts/application.html.erb:15
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:17:07 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 11623)
+Completed 200 OK in 29ms (Views: 27.9ms | Allocations: 13039)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2021-12-09 15:17:15 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 10784)
+Completed 200 OK in 17ms (Views: 17.0ms | Allocations: 11278)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:17:23 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 11214)
+Completed 200 OK in 31ms (Views: 29.7ms | Allocations: 12379)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/sessions/new" for 127.0.0.1 at 2021-12-09 15:17:25 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10792)
+Completed 200 OK in 18ms (Views: 17.8ms | Allocations: 11255)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2021-12-09 15:18:26 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 221)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 11614)
+Completed 200 OK in 28ms (Views: 27.1ms | Allocations: 13030)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:18:32 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 10786)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 11277)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:21:09 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 2.2ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 75.6ms | Allocations: 11617)
+Completed 200 OK in 92ms (Views: 86.3ms | Allocations: 13038)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:21:13 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 10784)
+Completed 200 OK in 21ms (Views: 20.8ms | Allocations: 11278)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:22:54 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 143)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 261)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 11655)
+Completed 200 OK in 32ms (Views: 30.4ms | Allocations: 13076)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-09 15:22:55 +0100
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 11250)
+Completed 200 OK in 26ms (Views: 25.2ms | Allocations: 12465)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/icons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-09 15:22:58 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 10813)
+Completed 200 OK in 31ms (Views: 29.5ms | Allocations: 11276)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20211209142925)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211209142925"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-12-09 14:32:57.165883"], ["updated_at", "2021-12-09 14:32:57.165883"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Maurice"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Maurice"], ["password_digest", "$2a$12$CcNkV6iOrH52N00BoS1dB.OuFjOiAmJ1DWlul1dMX4K94VG8Q7Ykq"], ["created_at", "2021-12-09 14:34:24.392855"], ["updated_at", "2021-12-09 14:34:24.392855"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Walter"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Walter"], ["password_digest", "$2a$12$NjLajL0wzhE7Dk3cqwkkgOEXYo2ssFR0iX9KCKZvEwbmuAYbKOS3C"], ["created_at", "2021-12-09 14:34:59.033035"], ["updated_at", "2021-12-09 14:34:59.033035"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Bram"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Bram"], ["password_digest", "$2a$12$GMr6TaPxgvBeMuJJv4R9geNV4YEtUECEgZLg3cWnJvhnxK.cpLdJi"], ["created_at", "2021-12-09 14:35:07.724161"], ["updated_at", "2021-12-09 14:35:07.724161"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m

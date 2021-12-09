@@ -1,1 +1,6 @@
-@import '@doabit/semantic-ui-sass/src/scss/semantic-ui.scss'
+@import '@doabit/semantic-ui-sass/src/scss/semantic-ui.scss';
+@import 'semantic-ui.css';
+
+.chatbox {
+  height: 450px;
+}
