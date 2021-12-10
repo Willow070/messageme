@@ -13,4 +13,16 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
+$(document).on("turbolinks:load", function () {
+  $(".ui.dropdown").dropdown();
+  $(".message .close").on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
+  scroll_bottom();
+});
+
+function scroll_bottom() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
